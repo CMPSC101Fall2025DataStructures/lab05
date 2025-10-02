@@ -1,0 +1,45 @@
+# perform checks on a file
+
+# check the technical writing for various characteristics
+- writing/reflection.md:
+    - description: Ensure that writing/reflection.md file exists.
+      check: ConfirmFileExists
+    # - description: Write a minimum number of meaningful words (>300) in the reflection
+    #   check: CountFileWords
+    #   options:
+    #     count: 250
+    #     exact: false
+    - description: Complete all TODOs, remove the TODO markers in writing/reflection.md
+      check: MatchFileFragment
+      options:
+        fragment: TODO
+        count: 0
+        exact: true
+    - description: Delete the 'Add Your Name Here' prompt in writing/reflection.md
+      check: MatchFileFragment
+      options:
+        fragment: "Add Your Name Here"
+        count: 0
+        exact: true
+# check the technical writing for various characteristics
+- ./approximation_taylor_series.py:
+    - description: Ensure that ./approximation_taylor_series.py file exists.
+      check: ConfirmFileExists
+    - description: Complete all TODOs, remove the TODO markers in ./approximation_taylor_series.py
+      check: MatchFileFragment
+      options:
+        fragment: TODO
+        count: 0
+        exact: true
+    - description: Delete the 'Add Your Name Here' prompt in the ./approximation_taylor_series.py file
+      check: MatchFileFragment
+      options:
+        fragment: "Add Your Name Here"
+        count: 0
+        exact: true
+
+# count number of commits in the GitHub repository
+- description: Have at least a specific minimum number of commits (5) in repository
+  check: CountCommits
+  options:
+    count: 5
