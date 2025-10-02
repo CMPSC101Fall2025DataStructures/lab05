@@ -80,7 +80,7 @@ Your lab assignment implements the same basic mathematical principles that Pytho
 
 ### Getting Started
 
-We will be using the `uv` tool to manage dependencies and run the code in this project. If you have not installed `uv` yet, then please follow the instructions at https://uvlang.org/install to get the package manager software tool for Python installed on your computer.
+We will be using the `uv` tool to manage dependencies and run the code in this project. If you have not installed `uv` yet, then please follow the instructions at https://docs.astral.sh/uv/getting-started/installation/ to get the package manager software tool for Python installed on your computer.
 
 **The steps, in case you need them!**
 
